@@ -4,6 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel: ViewModel() {
+
+    //mutable live data persiste os dados mesmo com alterações
     var mContador = MutableLiveData<String>().apply { value = contador.toString() }
 
     private var contador: Int = 0
